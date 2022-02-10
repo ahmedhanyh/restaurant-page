@@ -39,3 +39,5 @@ navBar.appendChild(menuNav);
 navBar.appendChild(contactNav);
 
 document.body.insertBefore(navBar, pageContent);
+
+pageContent.appendChild(createHomePage());
