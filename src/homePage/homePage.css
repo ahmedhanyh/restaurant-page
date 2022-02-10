@@ -1,4 +1,8 @@
-#content {
-    font-family: Courgette;
+img {
+    margin-bottom: 12px;
+}
+
+#home {
     text-align: center;
+    padding: 0 48px;
 }

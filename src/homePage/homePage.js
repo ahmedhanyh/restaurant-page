@@ -1,8 +1,9 @@
 import Img from "./restaurant.jpg";
 import "./homePage.css";
 
-export default function loadHomePage() {
-    const contentDiv = document.querySelector("#content");
+export default function createHomePage() {
+    const homeDiv = document.createElement("div");
+    homeDiv.id = "home";
     
     const mainHeading = document.createElement("h1");
     mainHeading.textContent = "Restaurant";
@@ -16,7 +17,9 @@ export default function loadHomePage() {
         ipsum dolor sit amet consectetur adipisicing elit. Dolore, quisquam laboriosam. Voluptatum suscipit consequuntur ipsum maxime quia mollitia\
         quisquam sequi doloremque dignissimos odit distinctio culpa incidunt pariatur, voluptates quo placeat? Lorem ipsum dolor sit amet consectetur";
     
-    contentDiv.appendChild(mainHeading);
-    contentDiv.appendChild(restaurantImg);
-    contentDiv.appendChild(restaurantInfo);
+    homeDiv.appendChild(mainHeading);
+    homeDiv.appendChild(restaurantImg);
+    homeDiv.appendChild(restaurantInfo);
+
+    return homeDiv;
 }
