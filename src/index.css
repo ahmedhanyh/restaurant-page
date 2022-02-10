@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Quintessential&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+#content {
+    font-family: Courgette;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 36px 36px 48px;
+}
