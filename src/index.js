@@ -1,6 +1,7 @@
 import "./index.css";
 import createHomePage from "./homePage/homePage";
 import createMenuPage from "./menuPage/menuPage";
+import createContactPage from "./contactPage/contactPage";
 
 const pageContent = document.querySelector("#content");
 
@@ -28,9 +29,13 @@ menuNav.addEventListener("click", () => {
     pageContent.appendChild(createMenuPage());
 });
 
+contactNav.addEventListener("click", () => {
+    pageContent.innerHTML = "";
+    pageContent.appendChild(createContactPage());
+});
+
 navBar.appendChild(homeNav);
 navBar.appendChild(menuNav);
 navBar.appendChild(contactNav);
 
 document.body.insertBefore(navBar, pageContent);
-
