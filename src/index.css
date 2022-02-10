@@ -7,8 +7,34 @@
     border: 0;
 }
 
-#content {
+body {
+    width: 100vw;
+    height: 100vh;
     font-family: Courgette;
+    display: flex;
+    flex-direction: column;
+}
+
+#navbar {
+    flex: 1;
+    border-bottom: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+}
+
+.nav-item {
+    border-bottom: 2px solid transparent;
+}
+
+.nav-item:hover {
+    cursor: pointer;
+    border-color: black;
+}
+
+#content {
+    flex: 9;
     display: flex;
     flex-direction: column;
     align-items: center;
