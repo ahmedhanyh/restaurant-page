@@ -23,6 +23,11 @@ homeNav.addEventListener("click", () => {
     pageContent.appendChild(createHomePage());
 });
 
+menuNav.addEventListener("click", () => {
+    pageContent.innerHTML = "";
+    pageContent.appendChild(createMenuPage());
+});
+
 navBar.appendChild(homeNav);
 navBar.appendChild(menuNav);
 navBar.appendChild(contactNav);
