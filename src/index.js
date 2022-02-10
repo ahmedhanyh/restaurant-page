@@ -1,9 +1,26 @@
 import "./index.css";
-// import loadHomePage from "./homePage/homePage";
-// import loadMenuPage from "./menuPage/menuPage";
-import loadContactPage from "./contactPage/contactPage";
+import createHomePage from "./homePage/homePage";
+import createMenuPage from "./menuPage/menuPage";
 
-// loadHomePage();
-// const menuContent = loadMenuPage();
-const contactContent = loadContactPage();
-document.querySelector("#content").appendChild(contactContent);
+const pageContent = document.querySelector("#content");
+
+const navBar = document.createElement("div");
+navBar.id = "navbar";
+
+function createNavItem(text) {
+    const navItem = document.createElement("div");
+    navItem.classList.add("nav-item");
+    navItem.textContent = text;
+    return navItem;
+}
+
+const homeNav = createNavItem("Home");
+const menuNav = createNavItem("Menu");
+const contactNav = createNavItem("Contact");
+
+navBar.appendChild(homeNav);
+navBar.appendChild(menuNav);
+navBar.appendChild(contactNav);
+
+document.body.insertBefore(navBar, pageContent);
+
