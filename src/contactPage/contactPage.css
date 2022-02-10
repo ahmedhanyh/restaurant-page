@@ -4,10 +4,6 @@
     align-items: center;
 }
 
-#contact-heading {
-    margin: 48px 0;
-}
-
 #contact-form {
     width: 25vw;
     border: 2px solid black;
@@ -29,6 +25,7 @@ label {
 }
 
 input {
+    font-size: 1.05em;
     font-family: inherit;
     padding: 2px;
     flex: 4;
@@ -46,6 +43,7 @@ input {
 }
 
 #message {
+    font-size: 1.05em;
     font-family: inherit;
     padding: 4px;
     border: 2px solid black;
@@ -55,6 +53,7 @@ input {
 }
 
 input[type="submit"] {
+    font-size: 1.05em;
     margin-top: 24px;
     padding: 8px 16px;
     background-color: white;
