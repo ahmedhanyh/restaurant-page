@@ -18,6 +18,11 @@ const homeNav = createNavItem("Home");
 const menuNav = createNavItem("Menu");
 const contactNav = createNavItem("Contact");
 
+homeNav.addEventListener("click", () => {
+    pageContent.innerHTML = "";
+    pageContent.appendChild(createHomePage());
+});
+
 navBar.appendChild(homeNav);
 navBar.appendChild(menuNav);
 navBar.appendChild(contactNav);
