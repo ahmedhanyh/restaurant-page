@@ -1,7 +1,7 @@
 import Img from "./restaurant.jpg";
-import "./pageContent.css";
+import "./homePage.css";
 
-export default function pageLoad() {
+export default function loadHomePage() {
     const contentDiv = document.querySelector("#content");
     
     const mainHeading = document.createElement("h1");
