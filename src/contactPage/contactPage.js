@@ -1,6 +1,6 @@
 import "./contactPage.css";
 
-export default function loadContactPage() {
+export default function createContactPage() {
     const contactDiv = document.createElement("div");
     contactDiv.id = "contact";
 
@@ -32,6 +32,6 @@ function createLabelAndInputField(id, type, label, placeholder = "", textArea = 
     const labelAndInputField = !textArea ? `<div><label for=${id}>${label}</label>
                                 <input id=${id} type=${type} placeholder="${placeholder}" /></div>`
                                 : `<div id="message-area"><label for=${id}>${label}</label>
-                                <textarea id=${id} placeholder="${placeholder}" rows="8" cols="50"></textarea></div>`
+                                <textarea id=${id} placeholder="${placeholder}"></textarea></div>`
     return labelAndInputField;
 }
