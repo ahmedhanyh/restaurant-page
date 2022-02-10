@@ -3,7 +3,7 @@ import burgerImg from "./burger.jpg";
 import friesImg from "./fries.jpg";
 import colaImg from "./cola.jpg";
 
-export default function loadMenuPage() {
+export default function createMenuPage() {
     const menuContentDiv = document.createElement("div");
     menuContentDiv.id = "menu-content";
 
